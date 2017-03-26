@@ -1,0 +1,74 @@
+﻿body {
+    background-color: #fff;
+}
+
+#nav-bar {
+    width: 1000px;
+    margin: auto;
+}
+
+#h1 {
+    font: avantgarde md bt;
+    font-size: 100px;
+}
+
+#logo {
+  float: left;
+  position: relative;
+  z-index: 102;
+  display: block;
+}
+
+#logo img {
+        width: 180px;
+        height: 180px;
+ }
+
+#main-nav li {
+    display: inline;
+    position: relative;
+}
+
+
+#main-nav ul {
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    margin-left: 200px;
+    padding: 0;
+    background-color: #233;
+}
+
+#main-nav ul li {
+    display:inline-block;
+}
+
+#main-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+#main-nav ul li a:hover {
+    background-color: #aaa;
+}
+
+#main-nav ul li:hover ul {
+    display: block;
+    margin-left:-15px;
+}
+
+#main-nav ul ul /*Shelves*/ {
+    display: none;
+    width: 130px;
+    height: 235px;
+    position: absolute;
+}
+
+#main-nav ul ul li {
+     display: block;
+}
+
+
+
