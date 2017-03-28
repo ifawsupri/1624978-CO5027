@@ -8,38 +8,48 @@
 
   
 
-    <div>
+    
+
+    
+          
+  
+
+    <!-- <div class="logo">
         <div id="logo">
             <p class="auto-style2">
-            <a href="Index.html">
+            <a href="Default.aspx">
                 <img src="images/logo2.jpg" alt="Book Plant Logo" class="auto-style3" />&nbsp;&nbsp;
             </a> 
             </p>
         </div>
-    </div>
-    <h1 align="center">BOOK SIS</h1>
+    </div> -->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-
+    <p class="login"><a href="Login.aspx">Login</a></p>
+     <h1 class="auto-style5">BOOK SIS</h1>
     <div id="nav-bar">
         <div id="main-nav">
                 <ul>
                     <li><a href="Default.aspx">Home</a></li>
                     <li> <a>Shelves</a>
                         <ul>
-                            <li><a href="Shelf1.aspx">Shelf 1</a></li>
-                            <li><a href="Shelf2.aspx">Shelf 2</a></li>
-                            <li><a href="Shelf3.aspx">Shelf 3</a></li>
-                            <li><a href="Shelf4.aspx">Shelf 4</a></li>
-                            <li><a href="Shelf5.aspx">Shelf 5</a></li>
+                            <li><a href="Shelf1.aspx">Novel</a></li>
+                            <li><a href="Shelf2.aspx">Magazine</a></li>
+                            <li><a href="Shelf3.aspx">Comic</a></li>
                         </ul>
                     </li>
                     <li><a href="About.aspx">About</a></li>
                     <li><a href="Contact.aspx">Contact</a></li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
                     <li><input type="text" class="bar-item input" placeholder="Search..." /></li>
-                    <li> <button class="bar-item black">Go</button></li>
+                    <li><button class="bar-item black">Go</button></li>
+                    
+                    
+                    
                
                 
                 </ul>
@@ -51,14 +61,49 @@
         
             </asp:ContentPlaceHolder>
         </div>
-        </form>
 
-    
-            <p>&copy 2017 Work | All Rights Reserved | Bandar Seri Begawan | <a href="Admni.aspx">Admin</a></p>
-            <div id="footer">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+
+                <!-- ################################################################################################ -->
+                <!-- ################################################################################################ -->
+                <!-- ################################################################################################ -->
+                
+                    <!-- ################################################################################################ -->
+
+                <div id="feature">
+                    <h2>Book Sis' Spotlight of the Month</h2>
+                   <div id="spotlight">
+                        <ul>
+                            <li><a href="Novel.aspx">Novel</a></li>
+                            <li><a href="Magazine.aspx">Magazine</a></li>
+                            <li><a href="Comic.aspx">Comic</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    <!-- ################################################################################################ -->
+                
+                        
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+    </div>
+
+
+   
+
+
+</body>
+
+                        
+    <div id="footer">
+                <p class="auto-style4">&copy 2017 Work | All Rights Reserved | Bandar Seri Begawan | <a href="Admin.aspx">Admin</a></p>
+                <p class="auto-style1">
                 <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> | 
                 <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+                </p>
             </div>
-    </div>
-</body>
+
 </html>

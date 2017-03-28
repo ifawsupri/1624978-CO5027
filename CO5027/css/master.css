@@ -2,22 +2,50 @@
     background-color: #fff;
 }
 
+#login {
+    display: inline;
+
+}
+
+p.login {
+    text-align: right;
+}
+
 #nav-bar {
     width: 1000px;
     margin: auto;
 }
 
 #h1 {
-    font: avantgarde md bt;
+    font: denmark;
     font-size: 100px;
+    text-align: center;
 }
 
-#logo {
+.auto-style1 {
+    margin-left: 640px;
+}
+.auto-style2 {
+    margin-left: 40px;
+}
+.auto-style3 {
+    margin-left: 80px;
+}
+.auto-style4 {
+    direction: ltr;
+    margin-left: 520px;
+}
+.auto-style5 {
+    width: 160px;
+    margin-left: 640px;
+}
+
+/* #logo {
   float: left;
   position: relative;
   z-index: 102;
   display: block;
-}
+} */
 
 #logo img {
         width: 180px;
@@ -35,7 +63,7 @@
     margin: 0px 0px 0px 0px;
     margin-left: 200px;
     padding: 0;
-    background-color: #233;
+    background-color: #fff;
 }
 
 #main-nav ul li {
@@ -44,7 +72,7 @@
 
 #main-nav li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px 30px;
     text-decoration: none;
@@ -62,13 +90,60 @@
 #main-nav ul ul /*Shelves*/ {
     display: none;
     width: 130px;
-    height: 235px;
+    height: 295px;
     position: absolute;
+    background-color: #fff;
 }
 
 #main-nav ul ul li {
      display: block;
 }
 
+#banner {
+    width: auto;
+}
 
+#feature h2 {
+    text-align: center;
+}
+
+
+#spotlight li {
+    display: inline;
+    position: relative;
+}
+
+
+#spotlight ul {
+    list-style-type: none;
+    margin: 0px 100px 0px 0px;
+    margin-left: 150px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#spotlight ul li {
+    display: inline-block;
+}
+
+#spotlight li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 90px 90px;
+    text-decoration: none;
+}
+
+#spotlight ul li a:hover {
+    background-color: #aaa;
+}
+
+#spotlight ul li:hover ul {
+    display: block;
+    margin-left:-15px;
+}
+
+#banner ul ul li {
+     display: block;
+}
 
