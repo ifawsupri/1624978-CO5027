@@ -25,35 +25,40 @@
     </div> -->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style6 {
+            direction: ltr;
+        }
+    </style>
 </head>
-<body>
-    <p class="login"><a href="Login.aspx">Login</a></p>
-     <h1 class="auto-style5">BOOK SIS</h1>
-    <div id="nav-bar">
-        <div id="main-nav">
-                <ul>
-                    <li><a href="Default.aspx">Home</a></li>
-                    <li> <a>Shelves</a>
-                        <ul>
-                            <li><a href="Shelf1.aspx">Novel</a></li>
-                            <li><a href="Shelf2.aspx">Magazine</a></li>
-                            <li><a href="Shelf3.aspx">Comic</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="About.aspx">About</a></li>
-                    <li><a href="Contact.aspx">Contact</a></li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li><input type="text" class="bar-item input" placeholder="Search..." /></li>
-                    <li><button class="bar-item black">Go</button></li>
+<body>  
+        <p class="login"><a href="Login.aspx">Login</a></p>
+         <h1 class="auto-style5">BOOK SIS</h1>
+        <div id="nav-bar">
+            <div id="main-nav">
+                    <ul>
+                        <li><a href="Default.aspx">Home</a></li>
+                        <li> <a>Shelves</a>
+                            <ul>
+                                <li><a href="Shelf1.aspx">Novel</a></li>
+                                <li><a href="Shelf2.aspx">Magazine</a></li>
+                                <li><a href="Shelf3.aspx">Comic</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="About.aspx">About</a></li>
+                        <li><a href="Contact.aspx">Contact</a></li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li><input type="text" class="bar-item input" placeholder="Search..." /></li>
+                        <li><button class="bar-item black">Go</button></li>
                     
                     
                     
                
                 
-                </ul>
-        </div>
+                    </ul>
+            </div>
     
          <form id="form1" runat="server">
         <div>
@@ -73,11 +78,11 @@
 
                 <div id="feature">
                     <h2>Book Sis' Spotlight of the Month</h2>
-                   <div id="spotlight">
+                    <div id="spotlight">
                         <ul>
-                            <li><a href="Novel.aspx">Novel</a></li>
-                            <li><a href="Magazine.aspx">Magazine</a></li>
-                            <li><a href="Comic.aspx">Comic</a></li>
+                            <li><a class="logo1" href="Novel.aspx">Novel</a></li>
+                            <li><a class="logo2" href="Magazine.aspx">Magazine</a></li>
+                            <li><a class="logo3" href="Comic.aspx">Comic</a></li>
                         </ul>
                     </div>
                 </div>
@@ -91,19 +96,14 @@
         </form>
     </div>
 
-
-   
-
-
-</body>
-
-                        
     <div id="footer">
-                <p class="auto-style4">&copy 2017 Work | All Rights Reserved | Bandar Seri Begawan | <a href="Admin.aspx">Admin</a></p>
-                <p class="auto-style1">
-                <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> | 
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
-                </p>
-            </div>
-
+        <p>&copy 2017 Work | All Rights Reserved | Bandar Seri Begawan | <a href="Admin.aspx">Admin</a></p>
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> | 
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+        </p>
+    </div>   
+          
+</body>
+    
 </html>

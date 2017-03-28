@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #fff;
+    ;
 }
 
 #login {
@@ -16,7 +16,7 @@ p.login {
     margin: auto;
 }
 
-#h1 {
+.h1 {
     font: denmark;
     font-size: 100px;
     text-align: center;
@@ -101,11 +101,86 @@ p.login {
 
 #banner {
     width: auto;
+    align-content: center;
+
 }
 
 #feature h2 {
     text-align: center;
+    margin-top: 50px;
 }
+
+a:hover {
+    position: relative;
+}
+
+a:hover:after {
+    content: url(images/logo1.1.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    /* left: 123px; change this value to one that suits you */
+    /* top: 56px; change this value to one that suits you */
+}
+
+/* HOVER FROM ALID **********/
+
+.item1
+{
+    float:left;
+    border:5px solid burlywood;
+    margin:50px 20px 0px 60px;
+    border: 3px solid rosybrown;
+    margin-top: 50px;
+    position:relative;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+}
+
+.item1 img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.item1 .prodtext
+{
+    position:absolute;
+    top: -100%;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width:100%; 
+    height:100%;
+    color: #fff;
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    -o-transition:all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+.item1:hover .prodtext
+{
+    top:0px;
+}
+.item1 .prodtext h4
+{
+    font-size: 15px;
+    font-weight:bold;
+    text-align:center;
+    border-bottom: 1px solid brown;
+    padding-bottom:10px;
+    margin-top: 10px;
+}
+
+.item1 .prodtext p
+{
+    margin: 15px 0px;
+    text-align: center;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+/* HOVER FROM ALID **********/
 
 
 #spotlight li {
@@ -124,6 +199,7 @@ p.login {
 
 #spotlight ul li {
     display: inline-block;
+    border: 1.5px solid black;
 }
 
 #spotlight li a {
@@ -147,3 +223,34 @@ p.login {
      display: block;
 }
 
+
+
+
+.footer {
+    margin-right: 100px;
+    display: table;
+    color: black;
+    background-color: #aaa;
+}
+
+#footer-1 {
+    text-align: center; 
+    display: table;
+    color: black;
+    background-color: #aaa;
+} 
+
+#footer-2 {
+    text-align: center;
+    display: table;
+    color: black;
+    background-color: #aaa;
+}
+
+#footer {
+    text-align: center;
+    background-color: silver;
+    color: black;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
