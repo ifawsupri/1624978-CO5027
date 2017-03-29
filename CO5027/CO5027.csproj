@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="custom.css" />
+    <Content Include="images\GoogleMapsStatic.PNG" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

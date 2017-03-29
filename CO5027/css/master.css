@@ -1,5 +1,7 @@
-﻿body {
-    ;
+﻿/* ID = HASHTAG, CLASS = DOT */
+
+body {
+    width: auto;
 }
 
 #login {
@@ -16,9 +18,9 @@ p.login {
     margin: auto;
 }
 
-.h1 {
+h1 {
     font: denmark;
-    font-size: 100px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -38,6 +40,11 @@ p.login {
 .auto-style5 {
     width: 160px;
     margin-left: 640px;
+}
+
+.auto-styles6 {
+    width: auto;
+    margin-left: 700px;
 }
 
 /* #logo {
@@ -90,12 +97,12 @@ p.login {
 #main-nav ul ul /*Shelves*/ {
     display: none;
     width: 130px;
-    height: 295px;
+    height: 175px;
     position: absolute;
     background-color: #fff;
 }
 
-#main-nav ul ul li {
+#main-nav ul ul li { 
      display: block;
 }
 
@@ -105,152 +112,153 @@ p.login {
 
 }
 
-#feature h2 {
-    text-align: center;
-    margin-top: 50px;
-}
-
-a:hover {
-    position: relative;
-}
-
-a:hover:after {
-    content: url(images/logo1.1.jpg); /* no need for qoutes */
-    display: block;
-    position: absolute;
-    /* left: 123px; change this value to one that suits you */
-    /* top: 56px; change this value to one that suits you */
-}
-
 /* HOVER FROM ALID **********/
 
-.item1
-{
-    float:left;
-    border:5px solid burlywood;
-    margin:50px 20px 0px 60px;
-    border: 3px solid rosybrown;
-    margin-top: 50px;
-    position:relative;
-    width:200px;
-    height:200px;
-    overflow:hidden;
+
+.item1 {
+    float: right;
+    border: 5px solid black;
+    margin: 80px 50px 50px 50px;
+    border: 3px solid grey;
+    margin-top: 80px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
 }
 
-.item1 img
-{
+.item1 img {
     height: 100%;
     width: 100%;
 }
 
-.item1 .prodtext
-{
-    position:absolute;
+.item1 .prodtext {
+    position: absolute;
     top: -100%;
     left: 0px;
     background: rgba(0, 0, 0, 0.5);
-    width:100%; 
-    height:100%;
+    width: 100%; 
+    height: 100%;
     color: #fff;
-    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    -o-transition:all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
     -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
 }
 
-.item1:hover .prodtext
-{
-    top:0px;
+.item1:hover .prodtext {
+    top: 0px;
 }
-.item1 .prodtext h4
-{
+.item1 .prodtext h4 {
     font-size: 15px;
-    font-weight:bold;
-    text-align:center;
-    border-bottom: 1px solid brown;
-    padding-bottom:10px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
     margin-top: 10px;
 }
 
-.item1 .prodtext p
-{
+.item1 .prodtext p {
     margin: 15px 0px;
     text-align: center;
-    padding-left:5px;
-    padding-right:5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* HOVER FROM ALID **********/
 
 
-#spotlight li {
-    display: inline;
-    position: relative;
-}
+/* HOVER FROM WORK **********/
+
+/* HOVER FROM WORK **********/
 
 
-#spotlight ul {
-    list-style-type: none;
-    margin: 0px 100px 0px 0px;
-    margin-left: 150px;
-    padding: 10px;
-    background-color: #fff;
-}
 
-#spotlight ul li {
-    display: inline-block;
-    border: 1.5px solid black;
-}
 
-#spotlight li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 90px 90px;
-    text-decoration: none;
-}
-
-#spotlight ul li a:hover {
-    background-color: #aaa;
-}
-
-#spotlight ul li:hover ul {
-    display: block;
-    margin-left:-15px;
-}
 
 #banner ul ul li {
      display: block;
 }
 
-
-
-
-.footer {
-    margin-right: 100px;
-    display: table;
-    color: black;
-    background-color: #aaa;
+.newitemwrapper-spotlight {
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 
-#footer-1 {
-    text-align: center; 
-    display: table;
-    color: black;
-    background-color: #aaa;
-} 
+.newitemwrapper-contactform {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
 
-#footer-2 {
+.newitemwrapper-contactmap {
+    margin: auto;
+}
+
+.newitemwrapper-footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.h2 {
+
+    font-family: verdana;
+    font-size: 15px;
+}
+
+
+
+h4 {
+    font-family: verdana;
+    font-size: 10px;
+    text-align: left;
+}
+
+
+#map {
+    height: 250px;
+    width: 30%;
+    align-content: center;
+    float: left;
+    margin-right: 10px;
+    margin-left: 400px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+#map-static {
+    height: auto;
+    width: auto;
+    align-content: center;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Geneva, sans-serif';
+    font-size: 12.5px;
     text-align: center;
-    display: table;
-    color: black;
-    background-color: #aaa;
 }
 
 #footer {
-    text-align: center;
-    background-color: silver;
+    width: 100%;
+    display: table;
     color: black;
-    margin: 10px 0px 10px 0px;
-    padding: 10px;
+    background-color: #e6e6e6;
+    margin: 200px 0px 0px 0px;
+    padding: 7px;
+}
+
+h6 {
+    font: verdana;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
 }
