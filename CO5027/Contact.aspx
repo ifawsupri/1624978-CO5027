@@ -1,22 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="CO5027.Contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="master.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="CO5027.Contact" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <style type="text/css">
-        .auto-style6 {
-            margin-left: 320px;
-        }
-    </style>
-
-</asp:Content>
+    </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
     <div class="ContactPage">
     
+             <h2>We Would Love to Hear From You</h2>
+    
              <div class="newitemwrapper-contactform">
-                 <h2 class="auto-style6">We Would Love to Hear From You</h2>
                     <p style="text-align: center">
                         <asp:Label ID="lblName" runat="server" Text="Name:" style="font-weight: 700"></asp:Label>
                         <asp:TextBox ID="txtboxName" runat="server" Height="25px" Width="200px"></asp:TextBox>
@@ -49,6 +44,7 @@
                         <asp:Button ID="btnSubmit" runat="server" style="font-weight: 700; text-align: center" Text="Submit" Width="100px" />
                     </p>
 
+                 <asp:Literal ID="litResult" runat="server"></asp:Literal>
 
              </div>
     </div>
@@ -62,11 +58,11 @@
             <div id="map"></div>
             <script>
               function initMap() {
-            var uluru = { lat: 4.88571, lng: 114.93150 };
+                var uluru = { lat: 4.88571, lng: 114.93150 };
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 17,
                   center: uluru
-                });
+                }); 
                 var marker = new google.maps.Marker({
                   position: uluru,
                   map: map
@@ -81,6 +77,11 @@
             <img src="images/GoogleMapsStatic.png" alt="Where We Based at"/>
             </div>
     </div>
+
+
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder5" runat="server">
 
 
 </asp:Content>

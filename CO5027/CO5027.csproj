@@ -95,13 +95,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="custom.css" />
+    <Content Include="images\deadpoolcomiccover.jpg" />
     <Content Include="images\GoogleMapsStatic.PNG" />
+    <Content Include="images\instylemagazinecover.jpg" />
+    <Content Include="images\matkpopnovelcover.png" />
+    <Content Include="images\patternmakernovel.jpg" />
+    <Content Include="images\pcgamerdawncover.jpg" />
+    <Content Include="images\preachercomic.jpg" />
+    <Content Include="images\thealchemistnovelcover.jpg" />
+    <Content Include="images\thewalkingdeadcomiccover.jpg" />
+    <Content Include="images\worldsoccer2017.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="master.Master" />
-    <Content Include="WebForm1.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -153,13 +161,6 @@
       <DependentUpon>master.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

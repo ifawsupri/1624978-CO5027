@@ -1,12 +1,11 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="CO5027.master" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master.master.cs" Inherits="CO5027.master" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" href="css/master.css" type="text/css" />
-
-  
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome" />  
 
     
 
@@ -27,8 +26,8 @@
     </asp:ContentPlaceHolder>
     </head>
 <body>  
-        <p class="login"><a href="Login.aspx">Login</a></p>
-         <h1>BOOK SIS</h1>
+        <p class="login"><a href="Login.aspx">Login</a> | <a href="Signup.aspx">Sign Up</a></p>
+         <h1>Ƀ O O K⠀⠀S I S</h1>
         <div id="nav-bar">
             <div id="main-nav">
                     <ul>
@@ -55,12 +54,13 @@
                     </ul>
             </div>
     
-         <form id="form1" runat="server">
+        <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
             </asp:ContentPlaceHolder>
         </div>
+             
 
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
@@ -76,37 +76,80 @@
                 <div id="spotlight">
                     <div class="newitemwrapper-spotlight">
                         <h2 align="center">Spotlight of the Month</h2>
-                        <div class="item1" id="prod1">
+                        <div class="books" id="novel1">
                             <a href="Novel.aspx">
-                            <img src="images/logo1.1.jpg" alt="Novel"/></a>
+                            <img src="images/patternmakernovel.jpg" alt="Novel"/></a>
                             <div class="prodtext">
-                                <h4>Distance, Speed & Time</h4>
-                                <p>
-                                    Fiction</p>
-                                <p>
-                                    <a class="morebutton" href="Novel.aspx" title="moreinfo">Check My Summary</a></p>
+                                <h4>Pattern Maker</h4>
+                                <p>A Creative Workbook</p>
+                                <p><a class="morebutton" href="Novel.aspx" title="moreinfo">Check My Summary</a></p>
                             </div>
                         </div>
-                        <div class="item1" id="prod2">
-                            <img src="images/logo2.jpg" alt="Magazine"/>
+                        <div class="books" id="magazine1">
+                            <img src="images/worldsoccer2017.png" alt="Magazine"/>
                             <div class="prodtext">
-                                <h4>Wistle, The</h4>
-                                <p>
-                                    Football</p>
-                                <p>
-                                    <a class="morebutton" href="Magazine.aspx" title="moreinfo">Check Who Tops the Table</a></p>
+                                <h4>World Soccer</h4>
+                                <p>Football</p>
+                                <p><a class="morebutton" href="Magazine.aspx" title="moreinfo">Check Who Tops the Table</a></p>
                             </div>
                         </div>
-                        <div class="item1" id="prod3">
-                            <img src="images/logo3.jpg" alt="Comic"/>
+                        <div class="books" id="prod3">
+                            <img src="images/preachercomic.jpg" alt="Comic"/>
                             <div class="prodtext">
-                                <h4>Utopia</h4>
-                                <p>
-                                    Next Punch Line</p>
-                                <p>
-                                    <a class="morebutton" href="Comic.aspx" title="moreinfo">Check Next Episode</a></p>
+                                <h4>Preacher</h4>
+                                <p>DC Comics</p>
+                                <p><a class="morebutton" href="Comic.aspx" title="moreinfo">Check Next Episode</a></p>
                             </div>
                         </div>
+                        <div class="books" id="prod4">
+                            <img src="images/deadpoolcomiccover.jpg" alt="Comic"/>
+                            <div class="prodtext">
+                                <h4>Deadpool</h4>
+                                <p>Marvel Comics</p>
+                                <p><a class="morebutton" href="Comic.aspx" title="moreinfo">What's Wade Up to Next?</a></p>
+                            </div>
+                        </div>
+                        <div class="books" id="prod5">
+                            <img src="images/instylemagazinecover.jpg" alt="Magazine"/>
+                            <div class="prodtext">
+                                <h4>In Style</h4>
+                                <p>Time Inc.</p>
+                                <p><a class="morebutton" href="Comic.aspx" title="moreinfo">This Issue's #WomenPower Quotes</a></p>
+                            </div>
+                        </div>
+                        <div class="books" id="prod6">
+                            <img src="images/matkpopnovelcover.png" alt="Novel"/>
+                            <div class="prodtext">
+                                <h4>Suami Aku Bukan Mat KPOP</h4>
+                                <p>Yuminion on DeviantArt</p>
+                                <p><a class="morebutton" href="Comic.aspx" title="moreinfo">Art Enthusiasts, Check This Out</a></p>
+                            </div>
+                        </div>
+                        <div class="books" id="prod7">
+                            <img src="images/pcgamerdawncover.jpg" alt="Magazine"/>
+                            <div class="prodtext">
+                                <h4>PC Gameer</h4>
+                                <p>Future PLC</p>
+                                <p><a class="morebutton" href="Comic.aspx" title="moreinfo">Dawn of War 3?</a></p>
+                            </div>
+                        </div>
+                        <div class="books" id="prod8">
+                            <img src="images/thealchemistnovelcover.jpg" alt="Novel"/>
+                            <div class="prodtext">
+                                <h4>Alchemist, The</h4>
+                                <p>HarperCollins</p>
+                                <p><a class="morebutton" href="Comic.aspx" title="moreinfo">Care for an Adventure?</a></p>
+                            </div>
+                        </div>
+                        <div class="books" id="prod9">
+                            <img src="images/thewalkingdeadcomiccover.jpg" alt="Comic"/>
+                            <div class="prodtext">
+                                <h4>Walking Dead, The</h4>
+                                <p>Image Comics</p>
+                                <p><a class="morebutton" href="Comic.aspx" title="moreinfo">Why is it "Kerrang! Award for Best Comic Book</a></p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                     </div>
@@ -117,7 +160,32 @@
     </div>
 
     <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+            
+    </asp:ContentPlaceHolder>
 
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+            <!-- <a href="#" class="back-to-top" style="display: inline;">
+                <i class="up-top"></i>
+            </a>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("myBtn").style.display = "block";
+                    } else {
+                        document.getElementById("myBtn").style.display = "none";
+                    }
+                }
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+                </script>
     </asp:ContentPlaceHolder>
 
 </body>
