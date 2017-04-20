@@ -41,7 +41,7 @@
                         <asp:TextBox ID="txtboxMessage" runat="server" Height="100px" Width="500px"></asp:TextBox>
                     </p>
                         <p style="text-align: center">
-                        <asp:Button ID="btnSubmit" runat="server" style="font-weight: 700; text-align: center" Text="Submit" Width="100px" />
+                        <asp:Button ID="btnSubmit" runat="server" style="font-weight: 700; text-align: center" Text="Submit" Width="100px" OnClick="btnSubmit_Click" />
                     </p>
 
                  <asp:Literal ID="litResult" runat="server"></asp:Literal>

@@ -1,5 +1,70 @@
 ﻿/* ID = HASHTAG, CLASS = DOT */
 
+
+/******************** LOGIN AND REGISTER .ASPX ********************/
+
+#loginform {
+    float: left;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 115px;
+}
+
+#registerform {
+    float: right;
+    width: 300px;
+    margin-top: 100px;
+    margin-right: 215px;
+}
+
+#txtboxEmail1 {
+    width: 147px;
+    margin-top: -10px;
+}
+
+#txtboxEmail2 {
+    width: 147px;
+    margin-top: -10px;
+}
+
+#txtboxUsername {
+    width: 147px;
+    margin-top: -10px;
+}
+
+#txtboxPassword1 {
+    width: 147px;
+    margin-top: -10px;
+}
+
+#txtboxPassword2 {
+    width: 147px;
+    margin-top: -10px;
+}
+
+#txtboxConfirmPassword {
+    width: 147px;
+    margin-top: -10px;
+}
+
+#btnLogin {
+    margin-top: 10px;
+    padding-left:  55px;
+    padding-right: 55px;
+}
+
+#btnRegister {
+    margin-top: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+
+/******************** LOGIN AND REGISTER .ASPX ********************/
+
+
+
+
 body {
     width: auto;
 }
@@ -208,7 +273,15 @@ h1 {
     margin-bottom: 50px;
 }
 
+.banner img {
+    align-content: center;
+    margin-left: 300px;
+}
 
+.newitemwrapper-spotlight h2 {
+    text-align: center;
+    margin-left: 100px;
+}
 
 h2 {
     font-family: arial;
@@ -217,12 +290,13 @@ h2 {
     color: silver;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     word-spacing: 1px;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-right: 100px;
     padding-top: 10px;
     padding-top: 45px;
     padding-bottom: 5px;
 }
-
 
 
 h4 {
@@ -258,6 +332,346 @@ h4 {
     padding-left: 10px;
     padding-bottom: 20px;
 }
+
+/****************************** MODAL NOVEL ******************************/
+
+
+#myModalBtn1 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn1 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn2 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn2 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn3 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn3 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn4 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn4 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn5 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn5 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn6 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn6 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn7 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn7 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn8 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn8 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn9 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn9 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn10 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn10 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn11 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn11 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn12 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn12 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn13 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn13 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn14 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn14 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn15 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn15 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn16 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn16 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn17 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn17 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn18 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn18 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn19 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn19 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn20 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn20 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn21 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn21 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn22 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn22 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn23 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn23 img {
+    height: 250px;
+    width: 175px;
+}
+
+#myModalBtn24 {
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 7px 7px;
+}
+
+#myModalBtn24 img {
+    height: 250px;
+    width: 175px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: silver;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: black;
+    color: silver;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: black;
+    color: silver;
+}
+
 
 
 /* .back-to-top {
@@ -308,7 +722,7 @@ h4 {
   transform: translateY(4px);
 } */
 
-#myBtn {
+#myGoTopBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -323,7 +737,7 @@ h4 {
   border-radius: 10px;
 }
 
-#myBtn:hover {
+#myGoTopBtn:hover {
   background-color: #555;
 }
 

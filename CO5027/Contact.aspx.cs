@@ -17,7 +17,10 @@ namespace CO5027
 
         protected void BtnSendEmail_Click(object sender, EventArgs e)
         {
-            // Sends email using a mail server that requires login credentials and a secure connection, e.g. gmail
+          
+
+
+           /* // Sends email using a mail server that requires login credentials and a secure connection, e.g. gmail
 
             //create mail client and message with to and from address, and set message subject and body
 
@@ -47,8 +50,43 @@ namespace CO5027
             catch (Exception ex)
             {
                 //display the full error to the user
-                litResult.Text = "<p>Send failed: " + ex.Message + ":" + ex.InnerException + "</p>";
+                litResult.Text = "<p>Send failed: " + ex.Message + ":" + ex.InnerException + "</p>"; */
             }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+
+            SmtpClient client = new SmtpClient();
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.EnableSsl = true;
+            client.Host = "smtp.gmail.com";
+            client.Port = 587;
+
+            // Smtp authentication
+            System.Net.NetworkCredential userpass = new System.Net.NetworkCredential("ifaw.supri@gmail.com", "blackeditionI3");
+            client.UseDefaultCredentials = false;
+            client.Credentials = userpass;
+
+            MailMessage msg = new MailMessage();
+            msg.From = new MailAddress(txtboxEmail.Text);
+            msg.To.Add(new MailAddress(txtboxEmail.Text));
+           
+            msg.Subject = txtboxEmail.Text;
+            msg.IsBodyHtml = true;
+            msg.Body = string.Format("From: " + txtboxName.Text + ",   Email: " + txtboxEmail.Text + ",   Message: " + txtboxMessage.Text);
+
+            try
+            {
+                client.Send(msg);
+                litResult.Text = "Your message has been successfully sent.";
+            }
+            catch (Exception ex)
+            {
+                litResult.Text = "Error occured while sending your message." + ex.Message;
+            }
+
+
         }
     }
 }
