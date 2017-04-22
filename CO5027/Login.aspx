@@ -50,7 +50,7 @@
             <p>
                 <asp:TextBox ID="txtboxConfirmPassword" runat="server"></asp:TextBox>
             </p>
-            <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" Text="Register" />
+            <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" Text="Register" style="height: 26px" />
             <asp:Literal ID="literalRegister" runat="server"></asp:Literal>
         </div>
     </div>
