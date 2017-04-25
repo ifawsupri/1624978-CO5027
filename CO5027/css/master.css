@@ -248,7 +248,9 @@ h1 {
 
 
 
-
+ContactPage {
+    text-align: center;
+}
 
 #banner ul ul li {
      display: block;
@@ -672,7 +674,13 @@ h4 {
     color: silver;
 }
 
+/****************** CONTACT PAGES VALIDATION ********************/
 
+litResult {
+    margin-left: 500px;
+}
+
+/****************** CONTACT PAGES VALIDATION ********************/
 
 /* .back-to-top {
     background: none;

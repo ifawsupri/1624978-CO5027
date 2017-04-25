@@ -15,8 +15,10 @@ namespace CO5027
         }
 
         protected void btnAddEntry_Click(object sender, EventArgs e)
+
+            //
         {
-            AddBlogEntry entry = new CO5027.AddBlogEntry();
+           /* AddBlogEntry entry = new CO5027.AddBlogEntry();
             entry.Title = txtTitle.Text;
             entry.Body = txtBody.Text;
             entry.Date = DateTime.Now;
@@ -28,8 +30,8 @@ namespace CO5027
             entry.ImageName = txtboxBody.Text;
             BookSisEntities db = new BookSisEntities();
             db.Image_Table.Add(entry);
-            db.SaveChanges();
-
+            db.SaveChanges(); */
+            //
 
         }
     }

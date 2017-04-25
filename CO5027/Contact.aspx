@@ -13,12 +13,18 @@
     
              <div class="newitemwrapper-contactform">
                     <p style="text-align: center">
-                        <asp:Label ID="lblName" runat="server" Text="Name:" style="font-weight: 700"></asp:Label>
+                        <asp:label id="lblName" runat="server" text="Name:" style="font-weight: 700"></asp:label>
                         <asp:TextBox ID="txtboxName" runat="server" Height="25px" Width="200px"></asp:TextBox>
+                            
+                        <asp:Literal ID="litName" runat="server"></asp:Literal>
+                            
                     </p>
                     <p style="text-align: center">
                         <asp:Label ID="lblEmail" runat="server" Text="Email:" style="font-weight: 700"></asp:Label>
                         <asp:TextBox ID="txtboxEmail" runat="server" Height="25px" Width="200px"></asp:TextBox>
+                            
+                        <asp:Literal ID="litEmail" runat="server"></asp:Literal>
+                            
                     </p>
                     <p style="text-align: center">
                         <asp:Label ID="lblCountry" runat="server" Text="Country:" style="font-weight: 700"></asp:Label>
@@ -39,12 +45,16 @@
                     <p style="text-align: center">
                         <asp:Label ID="lblMessage" runat="server" Height="110px" style="font-weight: 700" Text="Message:"></asp:Label>
                         <asp:TextBox ID="txtboxMessage" runat="server" Height="100px" Width="500px"></asp:TextBox>
+                            
+                        <asp:Literal ID="litMessage" runat="server"></asp:Literal>
+                            
                     </p>
                         <p style="text-align: center">
                         <asp:Button ID="btnSubmit" runat="server" style="font-weight: 700; text-align: center" Text="Submit" Width="100px" OnClick="btnSubmit_Click" />
-                    </p>
 
                  <asp:Literal ID="litResult" runat="server"></asp:Literal>
+
+                    </p>
 
              </div>
     </div>
