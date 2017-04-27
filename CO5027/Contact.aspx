@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="master.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="CO5027.Contact" %>
+﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="master.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="CO5027.Contact" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -82,9 +82,7 @@
                 });
               }
             </script>
-            <script async defer 
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-_4gLPJX0zw5rSuS523SPU5H1P-tt3a4 &callback=initMap">
-            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-_4gLPJX0zw5rSuS523SPU5H1P-tt3a4&callback=initMap"></script>
 
            <div id="map-static">
             <img src="images/GoogleMapsStatic.png" alt="Where We Based at"/>

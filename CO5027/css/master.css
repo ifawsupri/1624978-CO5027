@@ -635,7 +635,7 @@ h4 {
 }
 
 /* Add Animation */
-@-webkit-keyframes animatetop {
+@keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
 }

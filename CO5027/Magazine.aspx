@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="Magazine.aspx.cs" Inherits="CO5027.Magazine" %>
+﻿<%@ Page Title="Magazine" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="Magazine.aspx.cs" Inherits="CO5027.Magazine" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -1195,7 +1195,7 @@
                         </button>
 
                         <!-- The Modal -->
-                        <div id="myModal22" class="modal">
+                        <div id="myModal21" class="modal">
 
                         <!-- Modal content -->
                         <div class="modal-content">

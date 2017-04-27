@@ -24,17 +24,78 @@ namespace CO5027
         {
             if
                 (
-                String.IsNullOrWhiteSpace(txtboxName.Text) ||
-                String.IsNullOrWhiteSpace(txtboxEmail.Text) ||
+                // No everything
+                String.IsNullOrWhiteSpace(txtboxName.Text) &&
+                String.IsNullOrWhiteSpace(txtboxEmail.Text) &&
                 String.IsNullOrWhiteSpace(txtboxMessage.Text)
                 )
-            {
-                litResult.Text = "Please fill in the empty field.";
-            }
+                {
+                    litResult.Text = "Please fill in the empty field(s).";
+                }
+
+            else if
+                (
+                // No email & message
+                String.IsNullOrWhiteSpace(txtboxEmail.Text) &&
+                String.IsNullOrWhiteSpace(txtboxMessage.Text)
+                )
+                {
+                    litEmail.Text = "Please fill in your email.";
+                    litMessage.Text = "Please fill in your message.";
+                }
+
+            else if
+                (
+                // No name & message
+                String.IsNullOrWhiteSpace(txtboxName.Text) &&
+                String.IsNullOrWhiteSpace(txtboxMessage.Text)
+                )
+                {
+                    litName.Text = "Please fill in your name.";
+                    litMessage.Text = "Please fill in your message.";
+                }
+
+            else if
+                (
+                // No name & email
+                String.IsNullOrWhiteSpace(txtboxName.Text) &&
+                String.IsNullOrWhiteSpace(txtboxEmail.Text)
+                )
+                {
+                    litName.Text = "Please fill in your name.";
+                    litEmail.Text = "Please fill in your email.";
+                }
+
+            else if
+                (
+                // No message
+                String.IsNullOrWhiteSpace(txtboxMessage.Text)
+                )
+                {
+                    litMessage.Text = "Please fill in your message.";
+                }
+
+            else if
+                (
+                // No email
+                String.IsNullOrWhiteSpace(txtboxEmail.Text)
+                )
+                {
+                    litEmail.Text = "Please fill in your email.";
+                }
+
+            else if
+                (
+                // No name
+                String.IsNullOrWhiteSpace(txtboxName.Text)
+                )
+                {
+                    litName.Text = "Please fill in your name.";
+                }
 
             else if 
                 (
-                    // Test Email
+                    // No @ at Email
                     ((!string.IsNullOrWhiteSpace(txtboxName.Text)) &&
                     (!string.IsNullOrWhiteSpace(txtboxEmail.Text)) &&
                     (!string.IsNullOrWhiteSpace(txtboxMessage.Text)) &&
@@ -43,8 +104,10 @@ namespace CO5027
                     @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$",
                     RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250)))))
                         {
-                            litResult.Text = "Invalid email address.";
+                            litEmail.Text = "Invalid email address.";
                         }
+
+            
                 
             else { 
 
@@ -69,14 +132,7 @@ namespace CO5027
                     ("<br><b>From: </b>" + txtboxName.Text + 
                     "<b>, <br>Email: </b>" + txtboxEmail.Text + 
                     "<b>, <br>From: </b>" + dropdownCountry.SelectedItem.Text + 
-                    "<b>, <br>Message:<br> </b>" + txtboxMessage.Text) +
-                    "<br>" +
-                    "<br>" +
-                    "<br>" +
-                    "<br>" +
-                    "<br>" +
-                    "<i>Best Regards, <i><br>" + 
-                    "<b><i><u>Book Sis</u></i></b>";
+                    "<b>, <br>Message:<br> </b>" + txtboxMessage.Text) ;
 
 
 
