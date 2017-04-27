@@ -61,7 +61,7 @@ namespace CO5027
 
                 MailMessage msg = new MailMessage();
                 msg.From = new MailAddress(txtboxEmail.Text);
-                msg.To.Add(new MailAddress(txtboxEmail.Text));
+                msg.To.Add(new MailAddress("ifaw.supri@gmail.com"));
            
                 msg.Subject = txtboxEmail.Text;
                 msg.IsBodyHtml = true;
@@ -69,7 +69,14 @@ namespace CO5027
                     ("<br><b>From: </b>" + txtboxName.Text + 
                     "<b>, <br>Email: </b>" + txtboxEmail.Text + 
                     "<b>, <br>From: </b>" + dropdownCountry.SelectedItem.Text + 
-                    "<b>, <br>Message: </b>" + txtboxMessage.Text);
+                    "<b>, <br>Message:<br> </b>" + txtboxMessage.Text) +
+                    "<br>" +
+                    "<br>" +
+                    "<br>" +
+                    "<br>" +
+                    "<br>" +
+                    "<i>Best Regards, <i><br>" + 
+                    "<b><i><u>Book Sis</u></i></b>";
 
 
 
