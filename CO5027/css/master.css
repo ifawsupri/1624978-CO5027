@@ -680,6 +680,10 @@ litResult {
     margin-left: 500px;
 }
 
+.required {
+    color: red;
+}
+
 /****************** CONTACT PAGES VALIDATION ********************/
 
 /* .back-to-top {

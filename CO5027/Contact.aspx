@@ -15,6 +15,7 @@
                     <p style="text-align: center">
                         <asp:label id="lblName" runat="server" text="Name:" style="font-weight: 700"></asp:label>
                         <asp:TextBox ID="txtboxName" runat="server" Height="25px" Width="200px"></asp:TextBox>
+                        <span class="required">*</span>
                             
                         <asp:Literal ID="litName" runat="server"></asp:Literal>
                             
@@ -22,6 +23,7 @@
                     <p style="text-align: center">
                         <asp:Label ID="lblEmail" runat="server" Text="Email:" style="font-weight: 700"></asp:Label>
                         <asp:TextBox ID="txtboxEmail" runat="server" Height="25px" Width="200px"></asp:TextBox>
+                        <span class="required">*</span>
                             
                         <asp:Literal ID="litEmail" runat="server"></asp:Literal>
                             
@@ -45,6 +47,7 @@
                     <p style="text-align: center">
                         <asp:Label ID="lblMessage" runat="server" Height="110px" style="font-weight: 700" Text="Message:"></asp:Label>
                         <asp:TextBox ID="txtboxMessage" runat="server" Height="100px" Width="500px"></asp:TextBox>
+                        <span class="required">*</span>
                             
                         <asp:Literal ID="litMessage" runat="server"></asp:Literal>
                             
