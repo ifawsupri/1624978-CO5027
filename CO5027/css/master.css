@@ -12,9 +12,9 @@
 
 #registerform {
     float: right;
-    width: 300px;
+    width: 400px;
     margin-top: 100px;
-    margin-right: 215px;
+    margin-right: 115px;
 }
 
 #txtboxEmail1 {
@@ -92,6 +92,10 @@ h1 {
     word-spacing: 20px;
     margin-top: 10px;
     padding-top: 10px;
+}
+
+h5 {
+    font-size: 37px;
 }
 
 .auto-style1 {
@@ -776,3 +780,32 @@ h6 {
     margin: 10px 0px 0px 0px;
     padding: 0px;
 }
+
+
+/********** ADMIN **********/
+
+.bookdetails {
+    align-content: center;
+    margin: 10px 00px 10px 500px;
+    padding: 10px 500px 10px 0px;
+}
+
+#GridView1 {
+    align-content: center;
+    margin: 10px 20px 10px 100px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/********** ABOUT **********/
+
+.wrapper-about {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+
+

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="db_1624978_co5027_asgModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BookDetail">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BookName" Type="nvarchar" MaxLength="50" />
+          <Property Name="BookCategory" Type="nvarchar" MaxLength="50" />
+          <Property Name="BookGenre" Type="nvarchar" MaxLength="50" />
+          <Property Name="BookPrice" Type="nvarchar" MaxLength="50" />
+          <Property Name="BookLanguage" Type="nvarchar" MaxLength="50" />
+          <Property Name="BookAuthor" Type="nvarchar" MaxLength="50" />
+          <Property Name="BookPublish" Type="nvarchar" MaxLength="50" />
+          <Property Name="BookPages" Type="nvarchar" MaxLength="50" />
+          <Property Name="BookDescription" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="BookImage">
+          <Key>
+            <PropertyRef Name="BookImageID" />
+          </Key>
+          <Property Name="BookImageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BookImageAlternateText" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="BookImageWidth" Type="int" Nullable="false" />
+          <Property Name="BookImageHeight" Type="int" Nullable="false" />
+          <Property Name="BookImageExtension" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="db_1624978_co5027_asgModelStoreContainer">
+          <EntitySet Name="BookDetail" EntityType="Self.BookDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BookImage" EntityType="Self.BookImage" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_1624978_co5027_asgModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BookDetail">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BookName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BookCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BookGenre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BookPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BookLanguage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BookAuthor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BookPublish" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BookPages" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BookDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="BookImage">
+          <Key>
+            <PropertyRef Name="BookImageID" />
+          </Key>
+          <Property Name="BookImageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BookImageAlternateText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BookImageWidth" Type="Int32" Nullable="false" />
+          <Property Name="BookImageHeight" Type="Int32" Nullable="false" />
+          <Property Name="BookImageExtension" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="db_1624978_co5027_asgEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BookDetails" EntityType="Self.BookDetail" />
+          <EntitySet Name="BookImages" EntityType="Self.BookImage" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_1624978_co5027_asgModelStoreContainer" CdmEntityContainer="db_1624978_co5027_asgEntities">
+          <EntitySetMapping Name="BookDetails">
+            <EntityTypeMapping TypeName="db_1624978_co5027_asgModel.BookDetail">
+              <MappingFragment StoreEntitySet="BookDetail">
+                <ScalarProperty Name="BookID" ColumnName="BookID" />
+                <ScalarProperty Name="BookName" ColumnName="BookName" />
+                <ScalarProperty Name="BookCategory" ColumnName="BookCategory" />
+                <ScalarProperty Name="BookGenre" ColumnName="BookGenre" />
+                <ScalarProperty Name="BookPrice" ColumnName="BookPrice" />
+                <ScalarProperty Name="BookLanguage" ColumnName="BookLanguage" />
+                <ScalarProperty Name="BookAuthor" ColumnName="BookAuthor" />
+                <ScalarProperty Name="BookPublish" ColumnName="BookPublish" />
+                <ScalarProperty Name="BookPages" ColumnName="BookPages" />
+                <ScalarProperty Name="BookDescription" ColumnName="BookDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BookImages">
+            <EntityTypeMapping TypeName="db_1624978_co5027_asgModel.BookImage">
+              <MappingFragment StoreEntitySet="BookImage">
+                <ScalarProperty Name="BookImageID" ColumnName="BookImageID" />
+                <ScalarProperty Name="BookImageAlternateText" ColumnName="BookImageAlternateText" />
+                <ScalarProperty Name="BookImageWidth" ColumnName="BookImageWidth" />
+                <ScalarProperty Name="BookImageHeight" ColumnName="BookImageHeight" />
+                <ScalarProperty Name="BookImageExtension" ColumnName="BookImageExtension" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

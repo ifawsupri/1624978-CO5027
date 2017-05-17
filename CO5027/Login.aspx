@@ -18,24 +18,22 @@
                     Username:
                 </p>
                 <asp:TextBox ID="txtboxEmail1" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator 
-                    ID="reqValUsername" 
-                    runat="server" 
-                    ErrorMessage="RequiredFieldValidator">
-                </asp:RequiredFieldValidator>
+                <asp:Literal ID="litEmail1" runat="server"></asp:Literal>
                 <br />
                 <br />
                 Password:
                 <p>
-                    <asp:TextBox ID="txtboxPassword1" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator 
-                        ID="RequiredFieldValidator2" 
-                        runat="server" 
-                        ErrorMessage="RequiredFieldValidator">
-                    </asp:RequiredFieldValidator>
+                    <asp:TextBox ID="txtboxPassword1" TextMode="Password" runat="server"></asp:TextBox>
+                    <asp:Literal ID="litPassword1" runat="server"></asp:Literal>
                 </p>
-                <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" />
-                <asp:Literal ID="literalLogin" runat="server"></asp:Literal>
+                <asp:Button ID="btnLogin" 
+                    runat="server" 
+                    CommandName="MoveNExt"
+                    OnClick="btnLogin_Click" 
+                    Text="Login" 
+                    OnClientClick="window.location.href('Default.aspx', 'Default');"
+                    PostBackUrl="~/Default.aspx" />
+                <asp:Literal ID="litLogin" runat="server"></asp:Literal>
          </div>
     </div>
 
@@ -46,42 +44,24 @@
                 Email:
             </p>
             <asp:Textbox ID="txtboxEmail2" runat="server"></asp:Textbox>
-            <asp:RequiredFieldValidator 
-                ID="RequiredFieldValidator3" 
-                runat="server" 
-                ErrorMessage="RequiredFieldValidator">
-            </asp:RequiredFieldValidator>
+            <span class="required">*</span>
+            <asp:Literal ID="litEmail2" runat="server"></asp:Literal>
             <br />
             <br />
-            Username
-            <p>
-                <asp:TextBox ID="txtboxUsername" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator 
-                    ID="RequiredFieldValidator4" 
-                    runat="server" 
-                    ErrorMessage="RequiredFieldValidator">
-                </asp:RequiredFieldValidator>
-            </p>
             Password:
             <p>
-                <asp:TextBox ID="txtboxPassword2" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator 
-                    ID="RequiredFieldValidator5" 
-                    runat="server" 
-                    ErrorMessage="RequiredFieldValidator">
-                </asp:RequiredFieldValidator>
+                <asp:TextBox ID="txtboxPassword2" TextMode="Password" runat="server"></asp:TextBox>
+                <span class="required">*</span>
+                <asp:Literal ID="litPassword2" runat="server"></asp:Literal>
             </p>
             Confirm Password:
             <p>
-                <asp:TextBox ID="txtboxConfirmPassword" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator 
-                    ID="RequiredFieldValidator6" 
-                    runat="server" 
-                    ErrorMessage="RequiredFieldValidator">
-                </asp:RequiredFieldValidator>
+                <asp:TextBox ID="txtboxConfirmPassword" TextMode="Password" runat="server"></asp:TextBox>
+                <span class="required">*</span>
+                <asp:Literal ID="litConfirmPassword" runat="server"></asp:Literal>
             </p>
             <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" Text="Register" style="height: 26px" />
-            <asp:Literal ID="literalRegister" runat="server"></asp:Literal>
+            <asp:Literal ID="litRegister" runat="server"></asp:Literal>
         </div>
     </div>
 

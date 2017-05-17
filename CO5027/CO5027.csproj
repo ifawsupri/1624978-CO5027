@@ -144,12 +144,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddBlogEntry.aspx" />
-    <Content Include="AddBlogEntry.css" />
-    <Content Include="AddBlogEntry2.aspx" />
+    <Content Include="About.aspx" />
+    <Content Include="Admin.aspx" />
     <Content Include="Books.aspx" />
     <Content Include="Comic.aspx" />
-    <Content Include="custom.css" />
+    <Content Include="admin.css" />
     <Content Include="images\deadpoolcomiccover.jpg" />
     <Content Include="images\GoogleMapsStatic.PNG" />
     <Content Include="images\instylemagazinecover.jpg" />
@@ -162,15 +161,15 @@
     <Content Include="images\worldsoccer2017.png" />
     <Content Include="Login.aspx" />
     <Content Include="Magazine.aspx" />
-    <Content Include="Model1.Context.tt">
+    <Content Include="Model2.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model2.edmx</DependentUpon>
+      <LastGenOutput>Model2.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Model1.tt">
+    <Content Include="Model2.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Model2.edmx</DependentUpon>
+      <LastGenOutput>Model2.cs</LastGenOutput>
     </Content>
     <Content Include="Novel.aspx" />
     <Content Include="packages.config" />
@@ -178,12 +177,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="master.Master" />
-    <EntityDeploy Include="Model1.edmx">
+    <EntityDeploy Include="Model2.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model2.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <Content Include="Model2.edmx.diagram">
+      <DependentUpon>Model2.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\1624978.pubxml" />
     <None Include="Web.Debug.config">
@@ -207,26 +206,31 @@
     <Content Include="images\logo1.jpg" />
     <Content Include="images\logo2.jpg" />
     <Content Include="images\logo3.jpg" />
-    <Content Include="index.css" />
-    <Content Include="index.html" />
+    <Content Include="UploadPicture.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddBlogEntry.aspx.cs">
-      <DependentUpon>AddBlogEntry.aspx</DependentUpon>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddBlogEntry.aspx.designer.cs">
-      <DependentUpon>AddBlogEntry.aspx</DependentUpon>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddBlogEntry2.aspx.cs">
-      <DependentUpon>AddBlogEntry2.aspx</DependentUpon>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddBlogEntry2.aspx.designer.cs">
-      <DependentUpon>AddBlogEntry2.aspx</DependentUpon>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookDetail.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookImage.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
     <Compile Include="Books.aspx.cs">
       <DependentUpon>Books.aspx</DependentUpon>
@@ -259,9 +263,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Image_Table.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -283,20 +284,20 @@
     <Compile Include="master.Master.designer.cs">
       <DependentUpon>master.Master</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Context.cs">
+    <Compile Include="Model2.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
+      <DependentUpon>Model2.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs">
+    <Compile Include="Model2.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Designer.cs">
+    <Compile Include="Model2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>Model2.edmx</DependentUpon>
     </Compile>
     <Compile Include="Novel.aspx.cs">
       <DependentUpon>Novel.aspx</DependentUpon>
@@ -305,11 +306,15 @@
     <Compile Include="Novel.aspx.designer.cs">
       <DependentUpon>Novel.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Product_Table.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup1.cs" />
+    <Compile Include="UploadPicture.aspx.cs">
+      <DependentUpon>UploadPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadPicture.aspx.designer.cs">
+      <DependentUpon>UploadPicture.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

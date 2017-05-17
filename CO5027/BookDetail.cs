@@ -12,12 +12,17 @@ namespace CO5027
     using System;
     using System.Collections.Generic;
     
-    public partial class Product_Table
+    public partial class BookDetail
     {
-        public int ProductID { get; set; }
-        public string ProductName { get; set; }
-        public string ProductDetail { get; set; }
-        public Nullable<double> ProductPrice { get; set; }
-        public Nullable<int> ProductQuantity { get; set; }
+        public int BookID { get; set; }
+        public string BookName { get; set; }
+        public string BookCategory { get; set; }
+        public string BookGenre { get; set; }
+        public string BookPrice { get; set; }
+        public string BookLanguage { get; set; }
+        public string BookAuthor { get; set; }
+        public string BookPublish { get; set; }
+        public string BookPages { get; set; }
+        public string BookDescription { get; set; }
     }
 }

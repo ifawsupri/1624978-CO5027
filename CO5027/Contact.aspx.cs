@@ -118,7 +118,7 @@ namespace CO5027
                 client.Port = 587;
 
                 // Smtp authentication
-                System.Net.NetworkCredential userpass = new System.Net.NetworkCredential("ifaw.supri@gmail.com", "blackeditionI3");
+                System.Net.NetworkCredential userpass = new System.Net.NetworkCredential("ifaw.supri@gmail.com", "yourpassword");
                 client.UseDefaultCredentials = false;
                 client.Credentials = userpass;
 

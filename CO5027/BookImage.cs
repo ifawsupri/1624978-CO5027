@@ -12,12 +12,12 @@ namespace CO5027
     using System;
     using System.Collections.Generic;
     
-    public partial class Image_Table
+    public partial class BookImage
     {
-        public int ImageID { get; set; }
-        public string ImageName { get; set; }
-        public Nullable<int> Width { get; set; }
-        public Nullable<int> Height { get; set; }
-        public string AlternateText { get; set; }
+        public int BookImageID { get; set; }
+        public string BookImageAlternateText { get; set; }
+        public int BookImageWidth { get; set; }
+        public int BookImageHeight { get; set; }
+        public string BookImageExtension { get; set; }
     }
 }

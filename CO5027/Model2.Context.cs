@@ -13,10 +13,10 @@ namespace CO5027
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BookSisEntities : DbContext
+    public partial class db_1624978_co5027_asgEntities : DbContext
     {
-        public BookSisEntities()
-            : base("name=BookSisEntities")
+        public db_1624978_co5027_asgEntities()
+            : base("name=db_1624978_co5027_asgEntities")
         {
         }
     
@@ -25,7 +25,7 @@ namespace CO5027
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Image_Table> Image_Table { get; set; }
-        public virtual DbSet<Product_Table> Product_Table { get; set; }
+        public virtual DbSet<BookDetail> BookDetails { get; set; }
+        public virtual DbSet<BookImage> BookImages { get; set; }
     }
 }

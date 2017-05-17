@@ -66,6 +66,30 @@
                         </script>
 
 
+    <div id="box">
+        <asp:Repeater ID="itemsrpt" runat="server">
+            <HeaderTemplate>
+                <itemtemplate>
+                    <div class="books" id="books">
+                        <img src=".../images/<%#Eval("BookImageID") %><%# Eval("BookImageExtension") %>" alt="<%#Eval("BookImageAlternateText") %>" />
+                    <div class="text">
+                        <h5><%#Eval("BookImageName")%></h5>
+                        <a class="btnMore" href="Novel.aspx?id=<%#Eval("BookID") %>" title="Description">Description</a>
+                        <br />
+                        <br />
+                        <h5><%#Eval("BookImageName")%></h5>
+                        <a class="btnMore" href="Magazine.aspx?id=<%#Eval("BookID") %>" title="Description">Description</a>
+                        br />
+                        <br />
+                        <h5><%#Eval("BookImageName")%></h5>
+                        <a class="btnMore" href="Comic.aspx?id=<%#Eval("BookID") %>" title="Description">Description</a>
+                    </div>
+                    </div>
+                </itemtemplate>
+            </HeaderTemplate>
+        </asp:Repeater>
+    </div>
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
 </asp:Content>

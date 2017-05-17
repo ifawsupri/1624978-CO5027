@@ -31,13 +31,13 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtboxEmail1;
         
         /// <summary>
-        /// reqValUsername control.
+        /// litEmail1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValUsername;
+        protected global::System.Web.UI.WebControls.Literal litEmail1;
         
         /// <summary>
         /// txtboxPassword1 control.
@@ -49,13 +49,13 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtboxPassword1;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// litPassword1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.Literal litPassword1;
         
         /// <summary>
         /// btnLogin control.
@@ -67,13 +67,13 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.Button btnLogin;
         
         /// <summary>
-        /// literalLogin control.
+        /// litLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal literalLogin;
+        protected global::System.Web.UI.WebControls.Literal litLogin;
         
         /// <summary>
         /// txtboxEmail2 control.
@@ -85,31 +85,13 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtboxEmail2;
         
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// litEmail2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
-        
-        /// <summary>
-        /// txtboxUsername control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtboxUsername;
-        
-        /// <summary>
-        /// RequiredFieldValidator4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.Literal litEmail2;
         
         /// <summary>
         /// txtboxPassword2 control.
@@ -121,13 +103,13 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtboxPassword2;
         
         /// <summary>
-        /// RequiredFieldValidator5 control.
+        /// litPassword2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        protected global::System.Web.UI.WebControls.Literal litPassword2;
         
         /// <summary>
         /// txtboxConfirmPassword control.
@@ -139,13 +121,13 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtboxConfirmPassword;
         
         /// <summary>
-        /// RequiredFieldValidator6 control.
+        /// litConfirmPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        protected global::System.Web.UI.WebControls.Literal litConfirmPassword;
         
         /// <summary>
         /// btnRegister control.
@@ -157,12 +139,12 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.Button btnRegister;
         
         /// <summary>
-        /// literalRegister control.
+        /// litRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal literalRegister;
+        protected global::System.Web.UI.WebControls.Literal litRegister;
     }
 }
